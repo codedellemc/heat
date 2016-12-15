@@ -36,6 +36,7 @@ resources:
                 /usr/bin/curl -o /tmp/install-docker.sh https://get.docker.com
                 chmod +x /tmp/install-docker.sh
                 /tmp/install-docker.sh
+                #If your using ubuntu it's fine other wise replace the 'ubuntu' with appropriate default user 
                 /usr/sbin/usermod -G docker ubuntu
                 /usr/bin/curl -ssL -o /tmp/install-rexray.sh https://dl.bintray.com/emccode/rexray/install | sh -s -- stable 0.3.3
                 chmod +x /tmp/install-rexray.sh
@@ -80,6 +81,7 @@ resources:
                 /usr/bin/curl -o /tmp/install-docker.sh https://get.docker.com
                 chmod +x /tmp/install-docker.sh
                 /tmp/install-docker.sh
+                #If your using ubuntu it's fine other wise replace the 'ubuntu' with default user
                 /usr/sbin/usermod -G docker ubuntu
                 /usr/bin/curl -ssL -o /tmp/install-rexray.sh https://dl.bintray.com/emccode/rexray/install | sh -s -- stable 0.3.3
                 chmod +x /tmp/install-rexray.sh
